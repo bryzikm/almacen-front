@@ -2,17 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Almacen | Magazyn plików</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:300,400,700" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          type="text/css"/>
 </head>
 <body>
 <header id="header">
-
+    <div class="container">
+        <div class="row">
+            <div class="logo">
+                <a href="index.html">Almacen</a>
+            </div>
+            <div class="button__bar">
+                <a href="#" class="button--login button">Logowanie</a>
+                <a href="#" class="button--register button">Rejestracja</a>
+            </div>
+        </div>
+    </div>
 </header>
 <section id="herobanner">
-
+    <div class="herobanner__header">
+        <h1>Osiągaj więcej, gdziekolwiek jesteś</h1>
+        <div class="button--pulse button">
+            <a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="herobanner__mask"></div>
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 column--text column">
+                <h2>W każdej chwili,<br>na każdym urządzeniu</h2>
+                <p>Uzyskuj dostęp do plików z dowolnego miejsca i na każdym urządzeniu za pomocą usługi Almacen.
+                    Udostępniaj zawartość i współpracuj nad nią z innymi, zarówno w pracy, jak i w życiu
+                    prywatnym.</p>
+                <p>Usługa Almacen działa doskonale na wszystkich Twoich
+                    urządzeniach. Możesz uzyskiwać dostęp do plików i zdjęć oraz udostępniać je na komputerze PC lub Mac
+                    albo na urządzeniu z systemem Android lub iOS.</p>
+            </div>
+            <div class="col-md-6 col-xs-12 column--image column">
+                <img src="img/cloud.jpg"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="meeting" class="clearfix">
+    <div class="meeting--mask">
+        <div class="container">
+            <div class="meeting__header">
+                <h3>Opcja Klient Premium</h3>
+                <p>Zapewnij sobie wszystkie korzyści z używania usługi Almacen do obsługi plików w firmie, a także
+                    domu korzystając z możliwości ich udostępniania. Dodatkowo otrzymasz zwiększoną ilość miejsca,
+                    byś mógł przechowywać jeszcze więcej plików!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="text">
+    <div class="container">
+        <h3>Lepsza organizacja dzięki usłudze Almacen</h3>
+        <p>Usługa Almacen oferuje zaawansowane funkcje umożliwiające udostępnianie plików i folderów, tworzenie
+            zagnieżdżonych katalogów, a także edycję niektórych ustawień obiektów znajdujących się w chmurze.<br>
+            Zacznij korzystać!
+        </p>
+    </div>
+</section>
+<section id="contact" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="column__left column col-md-4 col-xs-12">
+                <div class="contact__text contact__info">
+                    <h2>Masz pytanie?</h2>
+                    <p>Śmiało! Wystarczy wypełnić formularz kontaktowy oraz podać powód, dla którego się z nami
+                        kontaktujesz. Resztą zajmiemy się my!</p>
+                </div>
+                <div class="contact__data contact__info">
+                    <h2>Dane kontaktowe:</h2>
+                    <a class="contact__email contact__single" href="mailto:kontakt@almacen.pl">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> kontakt@almacen.pl
+                    </a>
+                    <a class="contact__linkedin contact__single" href="http://linkedin.com">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a class="contact__facebook contact__single" href="http://facebook.pl">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="column__right column col-md-8 col-xs-12">
+                <div id="form">
+                    <h2>Skontaktuj się!</h2>
+                    <form>
+                        <input type="text" placeholder="Imię i nazwisko*" class="input input__text">
+                        <input type="email" placeholder="E-mail*" class="input input__text">
+                        <textarea placeholder="Wiadomość*" class="input input__text"></textarea>
+                        <input type="reset" value="Wyczyść" class="input input__button">
+                        <input type="submit" value="Wyślij wiadomość" class="input input__button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <footer id="footer">
-
+    <div class="container">
+        <p>© <span id="year"></span>|<span class="company">Almacen</span></p>
+    </div>
 </footer>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
