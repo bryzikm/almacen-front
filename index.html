@@ -20,8 +20,8 @@
                 <a href="index.html">Almacen</a>
             </div>
             <div class="button__bar">
-                <a href="#" class="button--login button">Logowanie</a>
-                <a href="#" class="button--register button">Rejestracja</a>
+                <a id="btn-login" href="#" class="button--login button">Logowanie</a>
+                <a id="btn-register" href="#" class="button--register button">Rejestracja</a>
             </div>
         </div>
     </div>
@@ -116,6 +116,50 @@
         <p>© <span id="year"></span>|<span class="company">Almacen</span></p>
     </div>
 </footer>
+<!-- MODALS -->
+<div id="modal-login" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Logowanie</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" name="username" placeholder="Nazwa użytkownika*" required />
+                <input type="password" name="password" placeholder="Hasło*" required />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                <button id="login-submit" type="submit" class="btn btn-primary">Zaloguj</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-register" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Rejestracja</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" name="username" placeholder="Nazwa użytkownika*" required />
+                <input type="email" name="username" placeholder="Email*" min="7" required />
+                <input type="password" name="password" placeholder="Hasło*" required min="5" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                <button type="submit" class="btn btn-primary">Zarejestruj</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODALS END -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
